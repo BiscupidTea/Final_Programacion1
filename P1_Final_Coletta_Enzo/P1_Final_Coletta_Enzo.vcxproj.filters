@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c834dea2-fd60-45b6-b4de-ef0c5a3e1399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{29a2ae92-f7c6-4858-b3e6-7fccb25fd746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\object">
+      <UniqueIdentifier>{e459321d-6e44-4784-83b6-74195c6e135d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HUD.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object\Bullet.cpp">
+      <Filter>src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object\Enemy.cpp">
+      <Filter>src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object\Entity.cpp">
+      <Filter>src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object\Player.cpp">
+      <Filter>src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\AwesomeLibrary.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Game.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HUD.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\Bullet.h">
+      <Filter>src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\Enemy.h">
+      <Filter>src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\Entity.h">
+      <Filter>src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object\Player.h">
+      <Filter>src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\AwesomeLibrary.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\Vector2.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
