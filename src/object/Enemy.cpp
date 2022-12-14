@@ -66,3 +66,13 @@ int Enemy::GetAmount()
 {
 	return amountAsteroids;
 }
+
+void Enemy::DeleteEnemyDraw()
+{
+	goToCoordinates(position.x, position.y);
+	cout << "    ";
+	goToCoordinates(position.x, position.y + 1);
+	cout << "    ";
+	goToCoordinates(position.x, position.y + 2);
+	cout << "    ";
+}

@@ -16,6 +16,7 @@ public:
 	Enemy(Vector2 position, int width, int height, bool isAlive, float speed);
 	~Enemy();
 	void Draw();
+	void DeleteEnemyDraw();
 
 	void Movement();
 

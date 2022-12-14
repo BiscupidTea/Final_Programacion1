@@ -21,7 +21,6 @@ public:
 	void Update();
 	void Draw();
 	void CreateEnemy();
-	void DeleteEnemy(Enemy* arrayEnemy);
 
 private:
 	int MaxScreenWidth;
@@ -31,7 +30,7 @@ private:
 	bool isPlaying;
 	Player* player;
 	Bullet* bullet;
-	vector<Enemy*>arrayEnemy;
+	Enemy* arrayEnemy[4];
 	HUD* hud;
 
 };

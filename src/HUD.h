@@ -15,10 +15,10 @@ private:
 	bool win;
 	bool isPlaying;
 	Player* player;
-	vector<Enemy*>arrayEnemy;
+	Enemy* arrayEnemy[4];
 
 public:
-	HUD(Player* player, vector<Enemy*>arrayEnemy , int ScreenWidth, int ScreenHeight, int maxEnemy);
+	HUD(Player* player, Enemy* arrayEnemy[] , int ScreenWidth, int ScreenHeight, int maxEnemy);
 	~HUD();
 
 	void Draw();

@@ -14,7 +14,7 @@ Game::Game()
 
 	for (int i = 0; i < maxEnemy; i++)
 	{
-	 	arrayEnemy.push_back(new Enemy({ rand() % 70 + 2, 2 }, 3, 3, true, enemySpeed));
+	 	arrayEnemy[i] = new Enemy({ rand() % 70 + 2, 2 }, 3, 3, true, enemySpeed);
 	}
 
 	hud = new HUD(player, arrayEnemy, MaxScreenWidth, MaxScreenHeight, maxEnemy);
@@ -96,7 +96,7 @@ void Game::Update()
 				goToCoordinates(bullet->GetX() - 1, bullet->GetY() + 1);
 				cout << "   ";
 
-				DeleteEnemy(arrayEnemy[i]);
+				arrayEnemy[i]->DeleteEnemyDraw();
 				delete arrayEnemy[i];
 				arrayEnemy[i] = new Enemy({ rand() % 70 + 2, 2 }, 3, 3, true, enemySpeed);
 
@@ -150,14 +150,4 @@ void Game::CreateEnemy()
 		delete arrayEnemy[i];
 		arrayEnemy[i] = new Enemy({ rand() % 70 + 2, 2 }, 3, 3, true, enemySpeed);
 	}
-}
-
-void Game::DeleteEnemy(Enemy* arrayEnemy)
-{
-	goToCoordinates(arrayEnemy->GetX(), arrayEnemy->GetY());
-	cout << "    ";
-	goToCoordinates(arrayEnemy->GetX(), arrayEnemy->GetY() + 1);
-	cout << "    ";
-	goToCoordinates(arrayEnemy->GetX(), arrayEnemy->GetY() + 2);
-	cout << "    ";
 }

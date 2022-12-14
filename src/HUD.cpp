@@ -1,6 +1,6 @@
 #include "HUD.h"
 
-HUD::HUD(Player* player, vector<Enemy*>arrayEnemy, int ScreenWidth, int ScreenHeight, int maxEnemy)
+HUD::HUD(Player* player, Enemy* arrayEnemy[], int ScreenWidth, int ScreenHeight, int maxEnemy)
 {
 	this->ScreenWidth = ScreenWidth;
 	this->ScreenHeight = ScreenHeight;
@@ -11,7 +11,7 @@ HUD::HUD(Player* player, vector<Enemy*>arrayEnemy, int ScreenWidth, int ScreenHe
 
 	for (int i = 0; i < maxEnemy; i++)
 	{
-		this->arrayEnemy = arrayEnemy;
+		this->arrayEnemy[i] = arrayEnemy[i];
 	}
 }
 
