@@ -21,10 +21,7 @@ void Bullet::Draw()
 
 void Bullet::Shoot(char input)
 {
-	if (input == 'f' || input == 'F')
-	{
-		SetActive(true);
-	}
+	SetActive(true);
 }
 
 void Bullet::Movement(Vector2 playerPosition)

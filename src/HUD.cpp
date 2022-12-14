@@ -24,14 +24,14 @@ void HUD::Draw()
 {
 	ShowFrame();
 	char liveDraw = 3;
-	//
+	//score
 	goToCoordinates(78, 4);
 	setForegroundColor(Color::WHITE);
 	cout << "Score: ";
 	setForegroundColor(Color::YELLOW);
 	cout << player->GetPoints() << "   ";
 	setForegroundColor(Color::WHITE);
-	//
+	//lives
 	goToCoordinates(78, 6);
 	setForegroundColor(Color::WHITE);
 	cout << "Lives: ";
@@ -41,7 +41,7 @@ void HUD::Draw()
 		cout << liveDraw;
 	}
 	setForegroundColor(Color::WHITE);
-	//
+	//rules key
 	setForegroundColor(Color::WHITE);
 	goToCoordinates(78, 9);
 	cout << "D = RIGHT" << endl;
@@ -49,7 +49,7 @@ void HUD::Draw()
 	cout << "A = LEFT" << endl;
 	goToCoordinates(78, 11);
 	cout << "F = SHOOT" << endl;
-	//
+	//amount asteroids
 	setForegroundColor(Color::WHITE);
 	goToCoordinates(78, 15);
 	cout << "Asteroids = " << Enemy::GetAmount() << " " << endl;

@@ -14,6 +14,7 @@ class Game
 {
 public:
 	static const int maxEnemy = 4;
+	static const int maxBullets = 30;
 	Game();
 	~Game();
 	void GameLoop();
@@ -29,8 +30,8 @@ private:
 	float bulletSpeed;
 	bool isPlaying;
 	Player* player;
-	Bullet* bullet;
-	Enemy* arrayEnemy[4];
+	Bullet* bullet[maxBullets];
+	Enemy* arrayEnemy[maxEnemy];
 	HUD* hud;
 
 };
